@@ -1,14 +1,12 @@
-import React from 'react';
-import { FaStar } from 'react-icons/fa'
+import React from "react";
+import Star from "./Star";
 
-const StarRating = () => {
-  return [
-    <FaStar color='gold' />,
-    <FaStar color='gold' />,
-    <FaStar color='gold' />,
-    <FaStar color='gray' />,
-    <FaStar color='gray' />
-  ];
+const createArray = (lenght) => [...Array(lenght)];
+
+const StarRating = ({ tatalStars = 5 }) => {
+  return createArray(tatalStars).map((n, i) => (
+    <Star selected={true} key={i} />
+  ));
 };
 
 export default StarRating;

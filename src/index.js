@@ -1,5 +1,10 @@
-import React from 'react'
-import { render } from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom/client";
 import StarRating from './components/StarRating';
 
-render(<StarRating />, document.getElementById('root'));
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement)
+
+root.render(
+  <StarRating />
+);
