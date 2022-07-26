@@ -6,7 +6,7 @@ const Color = ({ title, color, rating }) => {
     <section>
       <h1>{title}</h1>
       <div style={{ height: 50, backgroundColor: color }}></div>
-      <StarRating selecteStars={rating} />
+      <StarRating selectedStars={rating} />
     </section>
   );
 };
