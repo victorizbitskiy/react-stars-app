@@ -3,15 +3,13 @@ import Star from "./Star";
 
 const createArray = (lenght) => [...Array(lenght)];
 
-const StarRating = ({ totalStars = 5 }) => {
-  const [selectedStars, setSelectedStars] = useState(0);
+const StarRating = ({ totalStars = 5, selectedStars = 0 }) => {
   return (
     <>
       {createArray(totalStars).map((n, i) => (
         <Star
           key={i}
           selected={selectedStars > i}
-          onSelect={() => setSelectedStars(i + 1)}
         />
       ))}
       <p>
