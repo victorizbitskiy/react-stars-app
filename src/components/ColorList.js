@@ -1,13 +1,23 @@
 import React from 'react';
 import Color from './Color'
 
-const ColorList = ({ colors = [], onRemoveColor = f => f }) => {
-  if (!colors.length) return <div>No Colors Listed.</div>
+const ColorList = ({
+  colors = [],
+  onRemoveColor = f => f,
+  onRateColor = f => f
+}) => {
+  if (!colors.length) return <div>No Colors Listed. (Add a Color)</div>
   return (
-    <div>
+    <div className='color-list'>
       {
-        colors.map(color => <Color key={color.id} {...color} onRemove={onRemoveColor} />)
-      }
+        colors.map(color => (
+          <Color
+            key={color.id}
+            {...color}
+            onRemove={onRemoveColor}
+            onRate={onRateColor}
+          />)
+        )}
     </div>
   );
 };
