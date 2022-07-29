@@ -1,6 +1,7 @@
 import React from 'react';
 import StarRating from './StarRating';
 import { FaTrash } from 'react-icons/fa';
+import AddColorForm from './AddColorForm';
 
 const Color = ({
   id,
@@ -21,6 +22,7 @@ const Color = ({
         selectedStars={rating}
         onRate={rating => onRate(id, rating)}
       />
+      <AddColorForm />
     </section>
   );
 }

@@ -9,14 +9,15 @@ const App = () => {
     onRateColor={(id, rating) => {
       const newColors = colors.map(color =>
         color.id === id ? { ...color, rating } : color
-        );
+      );
       setColors(newColors);
     }}
-    onRemoveColor={id =>{
+    onRemoveColor={id => {
       const newColors = colors.filter(color => color.id !== id);
       setColors(newColors)
     }}
   />;
+  <AddColorForm />
 };
 
 export default App;
