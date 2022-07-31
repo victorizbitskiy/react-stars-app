@@ -24,7 +24,7 @@ const App = () => {
           const newColors = colors.filter(color => color.id !== id);
           setColors(newColors)
         }}
-      />;
+      />
     </>
   );
 };
