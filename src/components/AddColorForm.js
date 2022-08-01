@@ -7,7 +7,7 @@ const AddColorForm = ({ onNewColor = f => f }) => {
 
   const submit = e => {
     e.preventDefault();
-    onNewColor(title, color);
+    onNewColor(titleProps.value, colorProps.value);
     resetTitle();
     resetColor()
   }

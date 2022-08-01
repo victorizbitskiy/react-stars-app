@@ -22,7 +22,6 @@ const Color = ({
         selectedStars={rating}
         onRate={rating => onRate(id, rating)}
       />
-      <AddColorForm />
     </section>
   );
 }
