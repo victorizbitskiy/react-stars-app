@@ -1,5 +1,5 @@
-import React, { ColorContext, createContext } from "react";
-import colorData from '../data/color-data.json';
+import React, { createContext } from "react";
+import colors from './data/color-data.json';
 import ReactDOM from "react-dom/client";
 import App from './components/App';
 
@@ -10,6 +10,5 @@ export const ColorContext = createContext();
 root.render(
   <ColorContext.Provider value={{ colors }}>
     <App />
-  </ColorContext.Provider>,
-  rootElement
+  </ColorContext.Provider>
 );
