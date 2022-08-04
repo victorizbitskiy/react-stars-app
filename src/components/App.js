@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import AddColorForm from './AddColorForm';
+import React from 'react';
+import AddColorForm from './AddColorForm'
 import ColorList from './ColorList';
 
 const App = () => {
   return (
     <>
-      <AddColorForm/>
-      <ColorList/>
+      <AddColorForm />
+      <ColorList />
     </>
   );
 };
