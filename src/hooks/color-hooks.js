@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from 'react';
 import colorData from '../data/color-data.json'
 import { v4 } from 'uuid';
 
-export const ColorContext = createContext(colorData);
+export const ColorContext = createContext();
 export const useColors = () => useContext(ColorContext);
 
 const ColorProvider = ({ children }) => {
