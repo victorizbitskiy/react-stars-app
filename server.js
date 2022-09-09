@@ -4,7 +4,7 @@ const path = require('path')
 
 const server = http.createServer((req, res) => {
 
-  let filePath = path.join(__dirname, 'dist', req.url === '/' ? 'index.html' : req.url)
+  let filePath = path.join(__dirname, 'dist', req.url === '/react-stars-app' ? 'index.html' : req.url)
   const ext = path.extname(filePath)
   let contentType = 'text/html'
 
